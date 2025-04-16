@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+    <meta charset="UTF-8" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="formValidate.js"></script>
+</head>
+<body>
+    <header id="heading">
+        <h1><a href="index.html">Only Chairs</a></h1>
+        <nav>
+            <ol>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ol>
+        </nav>
+    </header>
+    <main id="contact_main">
+        <p class="contact_head">Contact Page</p>
+        <form action="/" method="get" id="contact_form">
+            <fieldset id="contactinfo">
+                <ul>
+                    <li><p>*means required</p></li>
+                    <li>
+                        <label for="name">Name*</label>
+                        <input type="text" name = "name" id="name">
+                        <p class = "error" id="name_error">*Required input</p>
+                    </li>
+                    <li>
+                        <label for="phonenumber">Phone*</label>
+                        <input type="tel" name= "phonenumber" id="phonenumber">
+                        <p class = "error" id="phonenumber_error">*Required input</p>
+                        <p class = "error" id="phonenumber_format_error">*Invalid phone number</p>
+                    </li>
+                    <li>
+                        <label for="email">Email*</label>
+                        <input type="text" name="email" id="email">
+                        <p class = "error" id="email_error">*Required field</p>
+                        <p class = "error" id="email_format_error">*Invalid email address</p>
+                    </li>
+                    <li>
+                        <label for="message">Message</label>
+                        <br>
+                        <textarea name="message" id="message"></textarea>
+                    </li>
+                    <li>
+                        <button type="reset" id="clear">Reset</button>
+                        <button type="submit" id="submit">Submit</button>
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
+    </main>
+    <footer id="footing">
+        <ol id="footnav">
+            <li><a href="index.html">Only Chairs</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ol>
+        <p id="creator">Creator: Jan Misa</p>
+    </footer>
+    
+</body>
+</html>
